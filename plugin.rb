@@ -3,8 +3,8 @@
 # version: 0.0.1
 # authors: Leo McArdle
 
-require 'oauth2_basic'
-require 'omniauth-oauth2'
+# require 'oauth2_basic'
+# require 'omniauth-oauth2'
 require 'base64'
 
 class WildApricotAuthenticator < ::Auth::ManagedAuthenticator

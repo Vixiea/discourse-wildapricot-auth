@@ -3,11 +3,11 @@
 # version: 0.0.1
 # authors: Leo McArdle
 
-require 'auth/oauth2_authenticator'
+require 'oauth2_basic'
 require 'omniauth-oauth2'
 require 'base64'
 
-class WildApricotAuthenticator < ::Auth::OAuth2Authenticator
+class WildApricotAuthenticator < ::Auth::ManagedAuthenticator
   def register_middleware(omniauth)
     omniauth.provider :wildapricot,
       SiteSetting.wildapricot_client_id,
